@@ -1,0 +1,220 @@
+.container-contacts {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #f1eaea;
+}
+
+.container-contacts .style-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-bottom: 100px;
+}
+
+
+.style-contacts h2 {
+    font-size: 30px;
+    color: #000000;
+
+}
+
+
+
+.style-contacts .style-border-contacts {
+    width: 80px;
+    height: 5px;
+    background: rgb(223, 176, 24);
+    border-radius: 10px;
+}
+
+
+.main-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.main-contacts a {
+    color: #000000;
+    font-weight: 300;
+}
+
+.main-contacts .information-addrress {
+    width: 50%;
+}
+
+
+.main-contacts .information-addrress ul {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+
+
+}
+
+
+.main-contacts .information-addrress ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 84%;
+}
+
+
+.main-contacts .information-addrress ul li p {
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.input-contact {
+    width: 50%;
+}
+
+
+.main-contacts .input-contact .input-contact-adrress {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+
+}
+
+.main-contacts .input-contact .input-contact-adrress label {
+    font-size: 16px;
+    color: #5c5a5ab6;
+}
+
+
+.main-contacts .input-contact .input-contact-adrress input {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #5c5a5a48;
+    outline: none;
+    color: #5c5a5a;
+    font-size: 18px;
+}
+
+
+.main-contacts .input-contact .input-contact-adrress input::placeholder {
+    font-size: 18px;
+    color: #5f5d5d8a;
+}
+
+
+#mensagem {
+    height: 100px;
+}
+
+
+.input-contact .btn-formulario {
+    width: 100px;
+    height: 45px;
+    font-size: 16px;
+    border: 2px solid #4e2929;
+    background: #4e2929;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 400;
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+
+
+.input-contact .btn-formulario:hover {
+
+    background: #f1eaea;
+    color: #4e2929;
+
+}
+
+
+
+
+@media screen and (max-width:950px) {
+
+    .container-contacts {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding: 0 20px;
+        /* evita que os elementos fiquem grudados nas laterais */
+    }
+
+    .container-contacts .style-contacts {
+        margin-top: 40px;
+    }
+
+    .container-contacts .main-contacts {
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 40px;
+        /* espaço entre os blocos */
+    }
+
+    .main-contacts .input-contact,
+    .main-contacts .information-addrress {
+        width: 100%;
+    }
+
+    .main-contacts .input-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-contacts .input-contact .input-contact-adrress,
+    #name,
+    #email,
+    #mensagem {
+        width: 100%;
+
+    }
+
+    .main-contacts .input-contact .input-contact-adrress input {
+        width: 80%;
+
+    }
+
+
+    .main-contacts .information-addrress {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 30px;
+
+
+    }
+
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width:600px){
+
+
+    
+
+
+}

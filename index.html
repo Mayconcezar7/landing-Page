@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/featuredProducts.css">
+    <link rel="stylesheet" href="style/containerAbout.css">
+    <link rel="stylesheet" href="style/containerMenu.css">
+    <link rel="stylesheet" href="style/containerTestimonials.css">
+    <link rel="stylesheet" href="style/containerGallery.css">
+    <link rel="stylesheet" href="style/containerContacts.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-header">
+            <a href="#inicio">☕ Coffee</a>
+        </div>
+
+
+        <nav class="desktop-menu">
+            <ul class="nav-ul">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contacts">Contatos</a></li>
+            </ul>
+        </nav>
+
+        <nav class="mobile-menu">
+            <button class="btn-open"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav-ul-1">
+                <div class="button-fechar">
+                    <button class="btn-fechar"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <li><a href="#inicio" class="links">Inicio</a></li>
+                <li><a href="#sobre-nos" class="links">Sobre Nós</a></li>
+                <li><a href="#menu" class="links">Menu</a></li>
+                <li><a href="#avaliacoes" class="links">Avaliações</a></li>
+                <li><a href="#galeria" class="links">Galeria</a></li>
+                <li><a href="#contacts" class="links">Contatos</a></li>
+            </ul>
+        </nav>
+        <div class="overlay-menu"></div>
+    </header>
+
+    <main>
+        <section class="featured-products" id="inicio">
+            <div class="description">
+
+                <h3> O melhor Café</h3>
+                <h2>Torne seu dia ótimo com nosso café especial</h2>
+                <p>Bem-vindo ao nosso paraíso do café, onde cada grão conta uma história e cada xícara desperta alegria.
+                </p>
+
+                <div class="button-featured">
+                    <a href="" class="btn-order">Peça agora</a>
+                    <a href="" class="btn-contact">Contatos</a>
+                </div>
+            </div>
+
+            <div class="img-section">
+                <img src="img/coffee-hero-section.png" alt="">
+            </div>
+
+        </section>
+
+        <section class="container-about" id="sobre-nos">
+
+            <div class="img-about">
+                <img src="img/about-image.jpg" alt="">
+            </div>
+
+            <div class="text-about">
+                <div class="style-about">
+                    <h2>SOBRE NÓS</h2>
+                    <div class="border-about"></div>
+                </div>
+                <p>Na Coffee House em Berndorf, Alemanha, nos orgulhamos de ser um destino para amantes de café e
+                    buscadores de conversas.
+                    Nós nos dedicamos a fornecer uma experiência excepcional de café em uma atmosfera aconchegante e
+                    convidativa, onde os hóspedes podem relaxar, descontrair e aproveitar seu tempo com conforto.
+                </p>
+
+
+                <div class="links-rede-social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x"></i></a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="container-menu" id="menu">
+
+
+            <div class="style-menu">
+                <h2>NOSSO MENU</h2>
+                <div class="style-border"></div>
+            </div>
+
+            <div class="container-menu-itens">
+
+                <div class="item">
+                    <img src="img/hot-beverages.png" alt="">
+                    <p class="name-production">Bebidas Quentes</p>
+                    <p class="description">Grande variedade de café quente a vapor para deixá-lo fresco e leve.</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/cold-beverages.png" alt="">
+                    <p class="name-production">Bebidas Geladas</p>
+                    <p class="description">Café frio cremoso e espumoso para te refrescar.</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/refreshment.png" alt="">
+                    <p class="name-production">Bebidas Refrescante</p>
+                    <p class="description">Fruta e bebida refrescante gelada para se sentir refrescado.</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/special-combo.png" alt="">
+                    <p class="name-production">Combos Especiais</p>
+                    <p class="description">Suas lutas favoritas de comer e beber.</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/desserts.png" alt="">
+                    <p class="name-production">Sobremesas</p>
+                    <p class="description">Satisfacie seu paladar e leve-o para um deleite culinário.</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/burger-frenchfries.png" alt="">
+                    <p class="name-production">Hambúrguer e Batatas Fritas</p>
+                    <p class="description">Mordidas rápidas para satisfazer sua fome de tamanho pequeno.</p>
+                </div>
+
+            </div>
+        </section>   
+
+    
+        <section class="container-testimonials" id="avaliacoes">
+
+            <div class="style-testimonials">
+                <h2>AVALIAÇÕES </h2>
+                <div class="style-border-testimonials"></div>
+            </div>
+
+            <div class="swiper">
+                <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper">
+                        <div class="card-item swiper-slide">
+                            <img src="img/user-1.jpg" alt="">
+                            <p class="name">James clover</p>
+                            <i class="feedbacks">"retaurante muito bom, otimas comidas"</i>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="img/user-2.jpg" alt="">
+                            <p class="name">Mike</p>
+                            <i class="feedbacks">"Café delicioso e ambiente super aconchegante. Atendimento
+                                excelente!"</i>
+                        </div>
+
+
+                        <div class="card-item swiper-slide">
+                            <img src="img/user-3.jpg" alt="">
+                            <p class="name">Mateus</p>
+                            <i class="feedbacks">"Capuccino incrível e pães de queijo deliciosos. Recomendo muitos"</i>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="img/user-4.jpg" alt="">
+                            <p class="name">Ana Clara</p>
+                            <i class="feedbacks">"Ótimo café, preço justo e música agradável. Sempre volto!"</i>
+                        </div>
+
+
+                        <div class="card-item swiper-slide">
+                            <img src="img/user-5.jpg" alt="">
+                            <p class="name">Junior</p>
+                            <i class="feedbacks">Expresso perfeito, doces ótimos e atendimento impecável!"</i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination  preView"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-gallery" id="galeria">
+
+            <div class="style-gallery">
+                <h2>GALERIA</h2>
+                <div class="style-border-gallery"></div>
+            </div>
+
+            <div class="img-gallery">
+                <ul class="ul-gallery">
+                    <li><img src="img/gallery-1.jpg" alt=""></li>
+                    <li><img src="img/gallery-2.jpg" alt=""></li>
+                    <li><img src="img/gallery-3.jpg" alt=""></li>
+                    <li><img src="img/gallery-4.jpg" alt=""></li>
+                    <li><img src="img/gallery-5.jpg" alt=""></li>
+                    <li><img src="img/gallery-6.jpg" alt=""></li>
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <section class="container-contacts" id="contacts">
+
+            <div class="style-contacts">
+                <h2>CONTATOS</h2>
+                <div class="style-border-contacts"></div>
+            </div>
+
+            <div class="main-contacts">
+
+                <div class="information-addrress">
+                    <ul>
+                        <li class="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p> Av Rochedo de Minas, N° 280, Pq Viviane,
+                                Itaquaquecetuba, SP , CEP 08582-280</p>
+                        </li>
+
+                        <li class="address">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:coffee.cafeteria25@gmail.com">coffee.cafeteria25@gmail.com</a>
+                        </li>
+
+                        <li class="address">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+5511964973043"> +55 (11) 964973043</a>
+                        </li>
+
+                        <li class="address">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Segunda a Sexta: 09h às 21h</p>
+
+                        </li>
+
+                        <li class="address">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Sábado e Domingo : 09h às 13h</p>
+
+
+                        </li>
+                    </ul>
+                </div>
+
+
+                <form class="input-contact" >
+                    <div class="input-contact-adrress">
+                        
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" placeholder="Digite o seu Nome" autocomplete="name" required>
+                    </div>
+
+                    <div class="input-contact-adrress">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Digite o seu Email" autocomplete="email" required>
+                    </div>
+
+                    <div class="input-contact-adrress">
+                        <label for="mensagem">Mensagem</label>
+                        <input type="text" id="mensagem" placeholder="Digite o sua Mensagem" required>
+                    </div>
+
+                   <input type="submit" value="Enviar" class="btn-formulario" class="btn-enviar">
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+    
+
+    
+
+
+
+    <script src="scripts/scriptbtnNav.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="scripts/scriptSwiper.js" defer></script>
+</body>
+
+</html>
