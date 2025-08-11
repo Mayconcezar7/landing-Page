@@ -30,6 +30,7 @@
     backdrop-filter:blur(5px);
 
     animation: transpBackground 1s linear 1;
+    cursor: pointer;
 
     
 }
@@ -42,12 +43,27 @@
     background-color: #fefefeef;
     z-index: 99;
     border-radius: 20px;
+    animation: transpBackground 1s linear 1;
 
 
     
 
 }
 
+
+.produtions-btn-fechar{
+    background: none;
+    border: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 1.25em;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.produtions-btn-fechar:hover{
+    color:rgb(223, 176, 24);
+}
 
 
 @media screen and (max-width:950px){
