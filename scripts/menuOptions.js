@@ -10,14 +10,20 @@ menuOptions.forEach(btnMenu =>{
     btnMenu.addEventListener("click",() =>{
 
         backgroundBlack.style.display = "flex"
+        
           
     })
 
 
     backgroundBlack.addEventListener("click",(e) =>{
 
-        if(e.target=== backgroundBlack){
+        const listItens = document.querySelector("#produtos")
 
+        
+
+        if(e.target=== backgroundBlack){
+            
+            
             backgroundBlack.style.display= "none"
 
         }
