@@ -72,7 +72,7 @@
 
 
 .container-menu-itens .item:hover{
-    background: #747272;
+    background: #7472722f;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.178);
 }
