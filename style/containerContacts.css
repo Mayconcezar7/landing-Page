@@ -6,6 +6,8 @@
     justify-content: center;
     flex-direction: column;
     background: #f1eaea;
+
+    padding: 20px;
 }
 
 .container-contacts .style-contacts {
@@ -19,7 +21,7 @@
 
 
 .style-contacts h2 {
-    font-size: 1.75em;
+    font-size: 1.5em;
     color: #000000;
 
 }

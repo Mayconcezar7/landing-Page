@@ -83,6 +83,9 @@ header nav ul .button-fechar button {
 }
 
 @media screen and (max-width:950px) {
+   header{
+      height: 65px;
+   }
 
    header .desktop-menu {
       display: none;
@@ -108,7 +111,7 @@ header nav ul .button-fechar button {
       font-size: 1.25em;
 
       position: absolute;
-      top: 30px;
+      top: 23px;
       right: 20px;
    }
 

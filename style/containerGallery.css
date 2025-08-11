@@ -31,7 +31,7 @@ main{
 
 
 .style-gallery h2 {
-    font-size: 1.75em;
+    font-size: 1.5em;
     color: #000000;
 
 }
@@ -64,6 +64,7 @@ main{
     height: 270px;
     cursor: zoom-in;
     border-radius: 20px;
+    margin-bottom: 5px;
 
 }
 
@@ -142,6 +143,8 @@ main{
     .img-gallery .ul-gallery{
         display: block;
     }
+    
+
     
 
 
