@@ -36,20 +36,20 @@
 
 .description h3 {
     font-family: "Miniver", cursive;
-    font-size: 25px;
+    font-size: 1.6em;
     color: rgb(223, 176, 24);
 
 }
 
 .description h2 {
-    font-size: 30px;
+    font-size: 2.0em;
     color: #fff;
     font-weight: 600;
 }
 
 .description p {
     color: #fff;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 300;
 }
 
@@ -83,7 +83,7 @@
 .button-featured a {
     background: rgb(223, 176, 24);
     padding: 10px 18px;
-    font-size: 18px;
+    font-size:1.1em;
     color: #000;
 
     border-radius: 20px;
@@ -141,16 +141,16 @@
     }
 
     .featured-products .description h3 {
-        font-size: 20px;
+        font-size: 1.25em;
     }
 
     .featured-products .description h2 {
-        font-size: 24px;
+        font-size: 1.5em;
         width: 100%;
     }
 
     .featured-products .description p {
-        font-size: 16px;
+        font-size: 1em;
     }
 
     .featured-products .img-section {
@@ -186,7 +186,7 @@
 
         margin-left: 12px;
 
-         margin-right: 12px;
+        margin-right: 12px;
     }
 
 

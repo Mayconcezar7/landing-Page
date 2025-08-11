@@ -28,7 +28,7 @@
 
 
  .style-menu h2 {
-    font-size: 30px;
+    font-size: 1.75em;
     color: #fff;
     
 }
@@ -44,7 +44,7 @@
 .container-menu-itens{
    
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: repeat(3,1fr);
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -62,9 +62,11 @@
     flex-direction: column;
     gap: 10px;
     height: 350px;
-    text-align: center;
     transition: 0.3s ease;
     cursor: pointer;
+
+
+    
    
 }
 
@@ -72,6 +74,7 @@
 .container-menu-itens .item:hover{
     background: #747272;
     border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.178);
 }
 
 
@@ -79,23 +82,32 @@
     width: 180px;
     height: 180px;
     padding: 10px;
+    
 }
 
 .container-menu-itens .item .name-production{
     color: #fff;
-    font-size: 18px;
+    font-size: 1.25em;
+    width: 70%;
     margin-top: 10px;
-
     font-weight: 400;
+    text-align: center;
+   
+
+   
 
 }
 
 
 .container-menu-itens .item .description{
-    min-width: 80%;
+    text-align: center;
+    width: 80%;
     font-weight: 300;
     color: #fff;
-    font-size: 16px;
+    font-size:0.75em;
+    padding-left: -70px;
+
+     
 }
 
 
@@ -112,14 +124,20 @@
     .container-menu-itens{
 
         display: grid;
+        align-items: center;
+        justify-content: center;
         grid-template-columns: repeat(2, 45%);
         margin-top: 10px;
     }
 
-
+    .item .name-production{
+        padding-left: 0.80em;
+    }
 
     .item .description{
         max-width: 70%;
+    
+       
     }
 
 }
@@ -127,6 +145,13 @@
 
 
 @media screen and (max-width:600px){
+    .container-menu{
+        padding: 100px 0 0;
+    }
+    .container-menu-itens{
+        display: block;
+        text-align: center;
+    }
 
 
     

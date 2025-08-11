@@ -40,7 +40,7 @@ header .mobile-menu {
 }
 
 header .logo-header a {
-   font-size: 30px;
+   font-size: 1.7em;
 }
 
 header .overlay-menu {
@@ -62,7 +62,7 @@ header nav ul li a {
    border-radius: 20px;
    transition: 0.3s ease;
 
-   font-size: 16px;
+   font-size: 1em;
 
 }
 
@@ -105,7 +105,7 @@ header nav ul .button-fechar button {
       border: none;
       background: none;
       color: #ffffff;
-      font-size: 20px;
+      font-size: 1.25em;
 
       position: absolute;
       top: 30px;
@@ -154,7 +154,7 @@ header nav ul .button-fechar button {
       right: 15px;
       border: none;
       background: none;
-      font-size: 20px;
+      font-size: 1.25em;
    }
 
    header .mobile-menu .nav-ul-1 .button-fechar button:hover{
