@@ -17,35 +17,35 @@
 
 
 .container-menu-itens > :nth-child(2){
-    transition-delay:300ms ;
+    transition-delay:200ms ;
 }
 .container-menu-itens >:nth-child(3){
-    transition-delay:700ms;
+    transition-delay:400ms;
 }
 .container-menu-itens >:nth-child(4){
-    transition-delay: 1000ms;
+    transition-delay: 600ms;
 }
 .container-menu-itens > :nth-child(5){
-    transition-delay: 1300ms;
+    transition-delay: 800ms;
 }
 .container-menu-itens > :nth-child(6){
-    transition-delay:1700ms;
+    transition-delay:1000ms;
 }
 
 
 
 .ul-gallery > :nth-child(2){
-    transition-delay:300ms ;
+    transition-delay:200ms ;
 }
 .ul-gallery >:nth-child(3){
-    transition-delay:700ms;
+    transition-delay:400ms;
 }
 .ul-gallery >:nth-child(4){
-    transition-delay: 1000ms;
+    transition-delay: 600ms;
 }
 .ul-gallery > :nth-child(5){
-    transition-delay: 1300ms;
+    transition-delay: 800ms;
 }
 .ul-gallery > :nth-child(6){
-    transition-delay:1700ms;
+    transition-delay:1000ms;
 }
