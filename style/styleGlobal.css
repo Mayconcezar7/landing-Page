@@ -1,0 +1,51 @@
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    transition: all 1s;
+}
+
+
+.container-menu-itens > :nth-child(2){
+    transition-delay:300ms ;
+}
+.container-menu-itens >:nth-child(3){
+    transition-delay:700ms;
+}
+.container-menu-itens >:nth-child(4){
+    transition-delay: 1000ms;
+}
+.container-menu-itens > :nth-child(5){
+    transition-delay: 1300ms;
+}
+.container-menu-itens > :nth-child(6){
+    transition-delay:1700ms;
+}
+
+
+
+.ul-gallery > :nth-child(2){
+    transition-delay:300ms ;
+}
+.ul-gallery >:nth-child(3){
+    transition-delay:700ms;
+}
+.ul-gallery >:nth-child(4){
+    transition-delay: 1000ms;
+}
+.ul-gallery > :nth-child(5){
+    transition-delay: 1300ms;
+}
+.ul-gallery > :nth-child(6){
+    transition-delay:1700ms;
+}

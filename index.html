@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="style/containerContacts.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/menuOptions.css">
+    <link rel="stylesheet" href="style/styleGlobal.css">
 
 </head>
 
@@ -74,27 +75,31 @@
     <main>
 
 
-        <section class="featured-products" id="inicio">
-            <div class="description">
+        <section class="featured-products " id="inicio">
 
-                <h3> O melhor Café</h3>
-                <h2>Torne seu dia ótimo com nosso café especial</h2>
-                <p>Bem-vindo ao nosso paraíso do café, onde cada grão conta uma história e cada xícara desperta alegria.
-                </p>
+            <div class="featured-products hidden">
+                <div class="description">
 
-                <div class="button-featured">
-                    <a href="#menu" class="btn-order">Peça agora</a>
-                    <a href="#contacts" class="btn-contact">Contatos</a>
+                    <h3> O melhor Café</h3>
+                    <h2>Torne seu dia ótimo com nosso café especial</h2>
+                    <p>Bem-vindo ao nosso paraíso do café, onde cada grão conta uma história e cada xícara desperta
+                        alegria.
+                    </p>
+
+                    <div class="button-featured">
+                        <a href="#menu" class="btn-order">Peça agora</a>
+                        <a href="#contacts" class="btn-contact">Contatos</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="img-section">
-                <img src="img/coffee-hero-section.png" alt="">
+                <div class="img-section">
+                    <img src="img/coffee-hero-section.png" alt="">
+                </div>
             </div>
 
         </section>
 
-        <section class="container-about" id="sobre-nos">
+        <section class="container-about hidden" id="sobre-nos">
 
             <div class="img-about">
                 <img src="img/about-image.jpg" alt="">
@@ -122,57 +127,58 @@
 
         </section>
 
-        <section class="container-menu" id="menu">
+        <section class="container-menu " id="menu">
+            <div class="container-menu hidden">
 
+                <div class="style-menu">
+                    <h2>NOSSO MENU</h2>
+                    <div class="style-border"></div>
+                </div>
 
-            <div class="style-menu">
-                <h2>NOSSO MENU</h2>
-                <div class="style-border"></div>
+                <div class="container-menu-itens">
+
+                    <div class="item hidden" data-item="Bebidas Quentes">
+                        <img src="img/hot-beverages.png" alt="">
+                        <p class="name-production">Bebidas Quentes</p>
+                        <p class="description">Grande variedade de café quente a vapor para deixá-lo fresco e leve.</p>
+                    </div>
+
+                    <div class="item hidden" data-item="Bebidas Geladas">
+                        <img src="img/cold-beverages.png" alt="">
+                        <p class="name-production">Bebidas Geladas</p>
+                        <p class="description">Café frio cremoso e espumoso para te refrescar.</p>
+                    </div>
+
+                    <div class="item hidden" data-item="Bebidas Refrescante">
+                        <img src="img/refreshment.png" alt="">
+                        <p class="name-production">Bebidas Refrescante</p>
+                        <p class="description">Fruta e bebida refrescante gelada para se sentir refrescado.</p>
+                    </div>
+
+                    <div class="item hidden" data-item="Combos Especiais">
+                        <img src="img/special-combo.png" alt="">
+                        <p class="name-production">Combos Especiais</p>
+                        <p class="description">Suas lutas favoritas de comer e beber.</p>
+                    </div>
+
+                    <div class="item hidden" data-item="Sobremesas">
+                        <img src="img/desserts.png" alt="">
+                        <p class="name-production">Sobremesas</p>
+                        <p class="description">Satisfacie seu paladar e leve-o para um deleite culinário.</p>
+                    </div>
+
+                    <div class="item hidden" data-item="Hambúrguer e Batatas Fritas">
+                        <img src="img/burger-frenchfries.png" alt="">
+                        <p class="name-production">Hambúrguer e Batatas Fritas</p>
+                        <p class="description">Mordidas rápidas para satisfazer sua fome de tamanho pequeno.</p>
+                    </div>
+
+                </div>
             </div>
+        </section>
 
-            <div class="container-menu-itens">
 
-                <div class="item" data-item="Bebidas Quentes">
-                    <img src="img/hot-beverages.png" alt="">
-                    <p class="name-production">Bebidas Quentes</p>
-                    <p class="description">Grande variedade de café quente a vapor para deixá-lo fresco e leve.</p>
-                </div>
-
-                <div class="item" data-item="Bebidas Geladas">
-                    <img src="img/cold-beverages.png" alt="">
-                    <p class="name-production">Bebidas Geladas</p>
-                    <p class="description">Café frio cremoso e espumoso para te refrescar.</p>
-                </div>
-
-                <div class="item" data-item="Bebidas Refrescante">
-                    <img src="img/refreshment.png" alt="">
-                    <p class="name-production">Bebidas Refrescante</p>
-                    <p class="description">Fruta e bebida refrescante gelada para se sentir refrescado.</p>
-                </div>
-
-                <div class="item" data-item="Combos Especiais">
-                    <img src="img/special-combo.png" alt="">
-                    <p class="name-production">Combos Especiais</p>
-                    <p class="description">Suas lutas favoritas de comer e beber.</p>
-                </div>
-
-                <div class="item" data-item="Sobremesas">
-                    <img src="img/desserts.png" alt="">
-                    <p class="name-production">Sobremesas</p>
-                    <p class="description">Satisfacie seu paladar e leve-o para um deleite culinário.</p>
-                </div>
-
-                <div class="item" data-item="Hambúrguer e Batatas Fritas">
-                    <img src="img/burger-frenchfries.png" alt="">
-                    <p class="name-production">Hambúrguer e Batatas Fritas</p>
-                    <p class="description">Mordidas rápidas para satisfazer sua fome de tamanho pequeno.</p>
-                </div>
-
-            </div>
-        </section>   
-
-    
-        <section class="container-testimonials" id="avaliacoes">
+        <section class="container-testimonials hidden" id="avaliacoes">
 
             <div class="style-testimonials">
                 <h2>AVALIAÇÕES </h2>
@@ -223,7 +229,7 @@
             </div>
         </section>
 
-        <section class="container-gallery" id="galeria">
+        <section class="container-gallery hidden" id="galeria">
 
             <div class="style-gallery">
                 <h2>GALERIA</h2>
@@ -232,12 +238,12 @@
 
             <div class="img-gallery">
                 <ul class="ul-gallery">
-                    <li><img src="img/gallery-1.jpg" alt=""></li>
-                    <li><img src="img/gallery-2.jpg" alt=""></li>
-                    <li><img src="img/gallery-3.jpg" alt=""></li>
-                    <li><img src="img/gallery-4.jpg" alt=""></li>
-                    <li><img src="img/gallery-5.jpg" alt=""></li>
-                    <li><img src="img/gallery-6.jpg" alt=""></li>
+                    <li class="hidden"><img src="img/gallery-1.jpg" alt=""></li>
+                    <li class="hidden"><img src="img/gallery-2.jpg" alt=""></li>
+                    <li class="hidden"><img src="img/gallery-3.jpg" alt=""></li>
+                    <li class="hidden"><img src="img/gallery-4.jpg" alt=""></li>
+                    <li class="hidden"><img src="img/gallery-5.jpg" alt=""></li>
+                    <li class="hidden"><img src="img/gallery-6.jpg" alt=""></li>
                 </ul>
 
             </div>
@@ -245,88 +251,90 @@
         </section>
 
 
-        <section class="container-contacts" id="contacts">
-
-            <div class="style-contacts">
-                <h2>CONTATOS</h2>
-                <div class="style-border-contacts"></div>
-            </div>
-
-            <div class="main-contacts">
-
-                <div class="information-addrress">
-                    <ul>
-                        <li class="address">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p> Av Rochedo de Minas, N° 280, Pq Viviane,
-                                Itaquaquecetuba, SP , CEP 08582-280</p>
-                        </li>
-
-                        <li class="address">
-                            <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:coffee.cafeteria25@gmail.com">coffee.cafeteria25@gmail.com</a>
-                        </li>
-
-                        <li class="address">
-                            <i class="fa-solid fa-phone"></i>
-                            <a href="tel:+5511964973043"> +55 (11) 964973043</a>
-                        </li>
-
-                        <li class="address">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>Segunda a Sexta: 09h às 21h</p>
-
-                        </li>
-
-                        <li class="address">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>Sábado e Domingo : 09h às 13h</p>
-
-
-                        </li>
-                    </ul>
+        <section class="container-contacts " id="contacts">
+            <div class="hidden container-contacts">
+                <div class="style-contacts">
+                    <h2>CONTATOS</h2>
+                    <div class="style-border-contacts"></div>
                 </div>
 
+                <div class="main-contacts">
 
-                <form class="input-contact" >
-                    <div class="input-contact-adrress">
-                        
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" placeholder="Digite o seu Nome" autocomplete="name" required>
+                    <div class="information-addrress">
+                        <ul>
+                            <li class="address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p> Av Rochedo de Minas, N° 280, Pq Viviane,
+                                    Itaquaquecetuba, SP , CEP 08582-280</p>
+                            </li>
+
+                            <li class="address">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:coffee.cafeteria25@gmail.com">coffee.cafeteria25@gmail.com</a>
+                            </li>
+
+                            <li class="address">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+5511964973043"> +55 (11) 964973043</a>
+                            </li>
+
+                            <li class="address">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>Segunda a Sexta: 09h às 21h</p>
+
+                            </li>
+
+                            <li class="address">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>Sábado e Domingo : 09h às 13h</p>
+
+
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="input-contact-adrress">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" placeholder="Digite o seu Email" autocomplete="email" required>
-                    </div>
 
-                    <div class="input-contact-adrress">
-                        <label for="mensagem">Mensagem</label>
-                        <input type="text" id="mensagem" placeholder="Digite o sua Mensagem" required>
-                    </div>
+                    <form class="input-contact">
+                        <div class="input-contact-adrress">
 
-                   <input type="submit" value="Enviar" class="btn-formulario">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" placeholder="Digite o seu Nome" autocomplete="name" required>
+                        </div>
 
-                </form>
+                        <div class="input-contact-adrress">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="Digite o seu Email" autocomplete="email"
+                                required>
+                        </div>
 
+                        <div class="input-contact-adrress">
+                            <label for="mensagem">Mensagem</label>
+                            <input type="text" id="mensagem" placeholder="Digite o sua Mensagem" required>
+                        </div>
+
+                        <input type="submit" value="Enviar" class="btn-formulario">
+
+                    </form>
+
+                </div>
             </div>
         </section>
 
         <div id="menu-options">
 
             <div id="produtos">
-                
-                    <button class="produtions-btn-fechar"><i class="fa-solid fa-xmark"></i></button>
+
+                <button class="produtions-btn-fechar"><i class="fa-solid fa-xmark"></i></button>
 
 
-                    <div class="lista-de-item">
+                <div class="lista-de-item">
 
 
-                    </div>
-                
+                </div>
 
 
-                
+
+
 
             </div>
 
@@ -337,16 +345,17 @@
     <footer>
         <p>Copyright &#169; 2025 Meu Site. Todos os direitos reservados.</p>
     </footer>
-    
 
-    
+
+
 
 
 
     <script src="scripts/scriptbtnNav.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="scripts/scriptSwiper.js" defer></script>
-    <script src="scripts/menuOptions.js"></script>
+    <script src="scripts/menuOptions.js" defer></script>
+    <script src="scripts/animation.js" defer></script>
 </body>
 
 </html>

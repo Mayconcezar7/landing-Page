@@ -44,7 +44,8 @@ const showItens = (paragrafo)=>{
 menuOptions.forEach(btnMenu =>{
    
     btnMenu.addEventListener("click",(e) =>{
-        backgroundBlack.style.display = "flex"  
+        
+        backgroundBlack.style.display = "flex";  
         
         
 
