@@ -21,11 +21,11 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    z-index: 98;
+    z-index: 96;
     background-color: rgba(0, 0, 0, 0.308);
     backdrop-filter: blur(5px);
 
-    animation: transpBackground 1s linear 1;
+    animation: transpBackground 200ms linear 1;
     cursor: pointer;
 
 
@@ -36,10 +36,10 @@
 
     width: 50%;
     height: 90%;
-    background-color: #fefefeef;
-    z-index: 99;
+    background-color: #fefefe;
+    z-index: 97;
     border-radius: 20px;
-    animation: transpBackground 100ms linear 1;
+    animation: transpBackground 300ms linear 1;
 
 
 
@@ -116,6 +116,7 @@
 
 .produtos-item .container-descricao-item .preco-item {
     font-size: 1em;
+    margin-top: 10px;
 }
 
 
