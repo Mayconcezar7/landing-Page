@@ -13,14 +13,7 @@ const produtionsBtnFechar =  document.querySelector(".produtions-btn-fechar")
 const showItens = (paragrafo)=>{
 
    
-    produtos.innerHTML =""
-
-
-
-    let h2 = document.createElement("h2")
-
-
-    h2.innerHTML = paragrafo
+    
 
 
     produtos.appendChild(h2)
@@ -28,15 +21,6 @@ const showItens = (paragrafo)=>{
     
 
 }
-
-
-
-
-
-
-
-
-
 
 
 
