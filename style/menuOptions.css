@@ -131,6 +131,7 @@
     background: none;
     cursor: pointer;
     color: black;
+    transition: 500ms ease;
 
 }
 
