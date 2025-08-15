@@ -1,11 +1,11 @@
 const produtosInformacao = [
-    //Bebidas quentes 
+    
     {imagem:"../imgProdutos/cafe.jpeg" ,alt:"bebida cafe", nome:"Café" , descricao:"Clássico global, pode ser puro, expresso, coado, cappuccino ou latte." , tamanho:"250ml", preco: 7.90 ,tipo:"Bebidas Quentes"},
     {imagem:"../imgProdutos/cha.jpeg" ,alt:"bebida Chá", nome:"Chá" , descricao:"CPopular em inúmeras culturas, com variedades como preto, verde, camomila e chai." , tamanho:"250ml", preco: 6.90 ,tipo:"Bebidas Quentes"},
     {imagem:"../imgProdutos/Cappuccino.jpeg" ,alt:"bebida Cappuccino", nome:"Cappuccino" , descricao:"Combinação italiana de café expresso, leite vaporizado e espuma de leite." , tamanho:"250ml", preco: 17.90 , tipo:"Bebidas Quentes"},
     {imagem:"../imgProdutos/Chocolate-quente.jpeg" ,alt:"bebida Chocolate Quente", nome:"Chocolate Quente" , descricao:"Feito com leite e cacau, muito apreciado no inverno." , tamanho:"300ml", preco: 10.90 , tipo:"Bebidas Quentes"},
     
-    //Bebidas Geladas
+    
 
     {imagem:"../imgProdutos/suco-de-laranja.jpg" ,alt:"Suco de laranja gelado", nome:"Suco de laranja gelado" , descricao:"Suco natural de laranja, refrescante e nutritivo." , tamanho:"500ml", preco: 23.90 ,tipo:"Bebidas Geladas"},
 ]
