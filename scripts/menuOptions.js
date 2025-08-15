@@ -8,6 +8,9 @@ const produtosInformacao = [
     
 
     {imagem:"../imgProdutos/suco-de-laranja.jpg" ,alt:"Suco de laranja gelado", nome:"Suco de laranja gelado" , descricao:"Suco natural de laranja, refrescante e nutritivo." , tamanho:"500ml", preco: 23.90 ,tipo:"Bebidas Geladas"},
+    {imagem:"../imgProdutos/Iced coffee.jpeg" ,alt:"Iced coffee", nome:"Iced coffee" , descricao:"Café servido com gelo, pode levar leite ou açúcar." , tamanho:"250ml", preco: 25.90 ,tipo:"Bebidas Geladas"},
+    {imagem:"../imgProdutos/Milk-shake-morango.png" ,alt:"Milk-shake Morango", nome:"Milk-shake Morango" , descricao:"Bebida cremosa de sorvete batido com leite e Morango." , tamanho:"700ml", preco: 18.90 ,tipo:"Bebidas Geladas"},
+    
 ]
 
 const menuOptions =  document.querySelectorAll(".item")
