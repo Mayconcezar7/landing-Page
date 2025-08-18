@@ -87,6 +87,9 @@ const mostrarCarrinho = (nome, tamanho, preco) => {
 
     }
 
+    
+
+
     atualizandoCarrinho()
 }
 
@@ -113,6 +116,7 @@ const atualizandoCarrinho = ()=>{
         `
 
         total += produtosCarrinho.preco * produtosCarrinho.quantidade
+        
 
 
         itensCarrinhoAdd.appendChild(itensDoCarrinho)
@@ -187,6 +191,18 @@ containerProdutos.addEventListener("click", (e) => {
 
         mostrarCarrinho(nome, tamanho, preco)
 
+       
+        Toastify({
+            text: "adicionado no carrinho",
+            duration: 3000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "#4fa726ff",
+            },
+        }).showToast();
 
 
     }
@@ -215,7 +231,17 @@ const removerItemCarrinho = (nome)=>{
             atualizandoCarrinho()
         }
         
-    }
+    }Toastify({
+            text: "Remover do carrinho",
+            duration: 3000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "#ff0e0eff",
+            },
+        }).showToast();
 
 }
 
