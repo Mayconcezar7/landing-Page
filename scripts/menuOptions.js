@@ -193,7 +193,7 @@ containerProdutos.addEventListener("click", (e) => {
 
        
         Toastify({
-            text: "adicionado no carrinho",
+            text: "Item Adicionado",
             duration: 3000,
             close: true,
             gravity: "top", // `top` or `bottom`
