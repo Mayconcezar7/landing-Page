@@ -1,7 +1,7 @@
 const produtosInformacao = [
 
     { imagem: "../imgProdutos/cafe.jpeg", alt: "bebida cafe", nome: "Café", descricao: "Clássico global, pode ser puro, expresso, coado, cappuccino ou latte.", tamanho: "250ml", preco: 7.90, tipo: "Bebidas Quentes" },
-    { imagem: "../imgProdutos/cha.jpeg", alt: "bebida Chá", nome: "Chá", descricao: "CPopular em inúmeras culturas, com variedades como preto, verde, camomila e chai.", tamanho: "250ml", preco: 6.90, tipo: "Bebidas Quentes" },
+    { imagem: "../imgProdutos/cha.jpeg", alt: "bebida Chá", nome: "Chá", descricao: "Popular em inúmeras culturas, com variedades como preto, verde, camomila e chai.", tamanho: "250ml", preco: 6.90, tipo: "Bebidas Quentes" },
     { imagem: "../imgProdutos/Cappuccino.jpeg", alt: "bebida Cappuccino", nome: "Cappuccino", descricao: "Combinação italiana de café expresso, leite vaporizado e espuma de leite.", tamanho: "250ml", preco: 17.90, tipo: "Bebidas Quentes" },
     { imagem: "../imgProdutos/Chocolate-quente.jpeg", alt: "bebida Chocolate Quente", nome: "Chocolate Quente", descricao: "Feito com leite e cacau, muito apreciado no inverno.", tamanho: "300ml", preco: 10.90, tipo: "Bebidas Quentes" },
 
@@ -117,13 +117,10 @@ const atualizandoCarrinho = ()=>{
 
         total += produtosCarrinho.preco * produtosCarrinho.quantidade
         
-
-
         itensCarrinhoAdd.appendChild(itensDoCarrinho)
 
 
     })
-
 
     precoTotal.style.color = "green"
 
@@ -133,10 +130,40 @@ const atualizandoCarrinho = ()=>{
 
 
 
+//remover itens do carrinho
+const removerItemCarrinho = (nome)=>{
+
+    const index = itensCarrinho.findIndex(item => item.nome == nome)
 
 
+    if (index !== -1) {
 
+        const item = itensCarrinho[index]
 
+        if (item.quantidade > 1) {
+
+            item.quantidade-=1
+            atualizandoCarrinho()
+            
+        }else{
+
+            itensCarrinho.splice(item ,1)
+            atualizandoCarrinho()
+        }
+        
+    }Toastify({
+            text: "Item Removido",
+            duration: 3000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "#ff0e0eff",
+            },
+        }).showToast();
+
+}
 
 
 
@@ -210,40 +237,7 @@ containerProdutos.addEventListener("click", (e) => {
 })
 
 
-//remover itens do carrinho
-const removerItemCarrinho = (nome)=>{
 
-    const index = itensCarrinho.findIndex(item => item.nome == nome)
-
-
-    if (index !== -1) {
-
-        const item = itensCarrinho[index]
-
-        if (item.quantidade > 1) {
-
-            item.quantidade-=1
-            atualizandoCarrinho()
-            
-        }else{
-
-            itensCarrinho.splice(item ,1)
-            atualizandoCarrinho()
-        }
-        
-    }Toastify({
-            text: "Item Removido",
-            duration: 3000,
-            close: true,
-            gravity: "top", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
-            style: {
-                background: "#ff0e0eff",
-            },
-        }).showToast();
-
-}
 
 //fechar/abrir carrinho de compras 
 
