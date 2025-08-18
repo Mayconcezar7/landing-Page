@@ -83,9 +83,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; /* começa de cima */
-    overflow-x: hidden; 
-     border: 1px solid rgba(0, 0, 0, 0.062);
-     border-radius: 10px;
+    overflow-x: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.062);
+    border-radius: 10px;
 }
 
 
@@ -119,6 +119,9 @@
     margin-top: 10px;
 }
 
+.nome-produto{
+    font-size: 1.3em;
+}
 
 
 
@@ -148,6 +151,11 @@
 
 
 @media screen and (max-width:950px) {
+    .container-produtos {
+        height: 500px;
+    }
+
+
 
     #produtos {
 

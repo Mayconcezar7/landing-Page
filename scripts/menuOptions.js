@@ -19,7 +19,8 @@ const produtos  = document.querySelector(".container-produtos")
 const produtionsBtnFechar =  document.querySelector(".produtions-btn-fechar")
 
 
-const tipoDeBebida = document.querySelector(".tipo-bebidas")
+const paragrafoItem = document.querySelector(".paragrafo-item")
+
 
 
 
@@ -30,6 +31,9 @@ const tipoDeBebida = document.querySelector(".tipo-bebidas")
 
 const showItens = (paragrafo)=>{
     produtos.innerHTML = ""
+
+    paragrafoItem.innerHTML = paragrafo
+   
 
    
     const filtros = produtosInformacao.filter(itens => itens.tipo == paragrafo)
@@ -43,7 +47,7 @@ const showItens = (paragrafo)=>{
         divItens.innerHTML = `
                             <img src="${produtosItem.imagem}" alt="">
                             <div class="container-descricao-item">
-                                <p class="descricao-item"> <strong>${produtosItem.nome}</strong> <br> <br> ${produtosItem.descricao} <br><strong>${produtosItem.tamanho}</strong></p>
+                                <p class="descricao-item"> <strong class="nome-produto">${produtosItem.nome}</strong> <br> <br> ${produtosItem.descricao} <br><strong>${produtosItem.tamanho}</strong></p>
                                 <p class="preco-item"> <strong>${produtosItem.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</strong></p>
                             </div>
                             <button class="btn-add-carrinho" data-nome="${produtosItem.nome}" data-tamanho="${produtosItem.tamanho}" data-preco="${produtosItem.preco}" > <i class="fa fa-cart-plus"></i></button>
@@ -55,9 +59,11 @@ const showItens = (paragrafo)=>{
 
     })
 
+   
+
 
     
-    
+  
 
 }
 
