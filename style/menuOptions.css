@@ -144,6 +144,114 @@
 }
 
 
+.btn-carrinho-compras{
+    color:white;
+    background-color: rgb(223, 176, 24) ;
+    font-size: 1.2em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 19;
+    padding: 5px;
+    border: none;
+    border-radius: 10%;
+    transition: 1s ease;
+    cursor: pointer;
+    
+}
+
+
+#backgroudCarrinho{
+    
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+#carrinho{
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    background-color: #fefefe;
+    z-index: 99;
+    border-radius: 20px;
+    
+    padding: 20px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.itens-carrinho{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    overflow-x: hidden;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    
+}
+
+
+.produtos-carrinho{
+    margin-top: 1em;
+    font-size: 0.85em;
+    
+    height: 20%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+}
+.btn-fechar-carrinho{
+    background: none;
+    border: none;
+    font-size: 1em;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    transition: color 300ms ease;
+    cursor: pointer;
+}
+
+.btn-fechar-carrinho:hover{
+    color:  rgb(223, 176, 24) ;
+    
+}
+
+.remover-item-carrinho{
+    padding: 5px 10px;
+    color: rgb(255, 0, 0);
+    border: transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    opacity: 1;
+    cursor: pointer;
+    transition: background 500ms ease;
+}
+.remover-item-carrinho:hover{
+    background-color: red;
+    color: #fefefe;
+}
+
+#preco-total{
+    margin-top: 10px;
+}
+
+
 
 
 
@@ -174,5 +282,23 @@
 
         font-size: 0.8em;
 
+    }
+
+
+    #backgroudCarrinho #carrinho{
+        width: 100%;
+        height: 100%;
+    }
+
+    .itens-carrinho{
+        width: 100%;
+
+        font-size: 0.7em;
+
+    }
+
+    .remover-item-carrinho{
+        padding: 3px 5px;
+        font-size: 0.9em;
     }
 }
