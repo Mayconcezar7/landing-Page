@@ -232,7 +232,7 @@ const removerItemCarrinho = (nome)=>{
         }
         
     }Toastify({
-            text: "Remover do carrinho",
+            text: "Item Removido",
             duration: 3000,
             close: true,
             gravity: "top", // `top` or `bottom`
