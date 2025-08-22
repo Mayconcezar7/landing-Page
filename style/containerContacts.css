@@ -119,6 +119,19 @@
 
 #mensagem {
     height: 100px;
+    
+}
+.texto{
+    width: 76%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 14px;
+    letter-spacing: 0.09em;
+}
+
+.texto::placeholder{
+    padding: 3px;
 }
 
 

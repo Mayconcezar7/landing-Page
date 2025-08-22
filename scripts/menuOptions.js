@@ -24,10 +24,14 @@ const iconCarrinho = document.querySelector(".btn-carrinho-compras")
 const iconCarrinhoBackground = document.querySelector("#backgroudCarrinho")
 const fecharCarrinho = document.querySelector(".btn-fechar-carrinho")
 const itensCarrinhoAdd = document.querySelector(".itens-carrinho")
-const precoTotal =  document.querySelector("#spna-valor-total")
+const precoTotal = document.querySelector("#span-valor-total")
+const fundoFinalizarPedido = document.querySelector("#background-finalizar-pedido")
+const btnFecharFinalizarPagamento = document.querySelector("#btn-fechar-finalizar-pagamento")
+
+
+const btnFinalizarPedido = document.querySelector("#btn-finalizar-pedido")
 
 let itensCarrinho = []
-
 
 
 
@@ -87,19 +91,19 @@ const mostrarCarrinho = (nome, tamanho, preco) => {
 
     }
 
-    
+
 
 
     atualizandoCarrinho()
 }
 
 //mostrar os itens carrinhos 
-const atualizandoCarrinho = ()=>{ 
+const atualizandoCarrinho = () => {
     let total = 0
 
     itensCarrinhoAdd.innerHTML = ""
 
-    itensCarrinho.forEach((produtosCarrinho)=>{
+    itensCarrinho.forEach((produtosCarrinho) => {
 
         let itensDoCarrinho = document.createElement("div")
 
@@ -109,14 +113,14 @@ const atualizandoCarrinho = ()=>{
         itensDoCarrinho.innerHTML = `
                         <h3 class="nome"> ${produtosCarrinho.nome}</h3>
                         <p class="tamanho">${produtosCarrinho.tamanho}</p>
-                        <p class="preco">${produtosCarrinho.preco.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }) }</p>
+                        <p class="preco">${produtosCarrinho.preco.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</p>
                         <p class="quantidade">Qta: ${produtosCarrinho.quantidade}</p>
                         
                         <button class="remover-item-carrinho" data-nome="${produtosCarrinho.nome}">Remover</button>
         `
 
         total += produtosCarrinho.preco * produtosCarrinho.quantidade
-        
+
         itensCarrinhoAdd.appendChild(itensDoCarrinho)
 
 
@@ -124,14 +128,23 @@ const atualizandoCarrinho = ()=>{
 
     precoTotal.style.color = "green"
 
-   precoTotal.innerHTML = total.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+    precoTotal.innerHTML = total.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+
+
+    if (itensCarrinho.length > 0) {
+        btnFinalizarPedido.style.display = "flex"
+
+    } else {
+
+        btnFinalizarPedido.style.display = "none"
+    }
 
 }
 
 
 
 //remover itens do carrinho
-const removerItemCarrinho = (nome)=>{
+const removerItemCarrinho = (nome) => {
 
     const index = itensCarrinho.findIndex(item => item.nome == nome)
 
@@ -142,26 +155,26 @@ const removerItemCarrinho = (nome)=>{
 
         if (item.quantidade > 1) {
 
-            item.quantidade-=1
+            item.quantidade -= 1
             atualizandoCarrinho()
-            
-        }else{
 
-            itensCarrinho.splice(item ,1)
+        } else {
+
+            itensCarrinho.splice(item, 1)
             atualizandoCarrinho()
         }
-        
-    }Toastify({
-            text: "Item Removido",
-            duration: 3000,
-            close: true,
-            gravity: "top", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
-            style: {
-                background: "#ff0e0eff",
-            },
-        }).showToast();
+
+    } Toastify({
+        text: "Item Removido",
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "#ff0e0eff",
+        },
+    }).showToast();
 
 }
 
@@ -218,7 +231,7 @@ containerProdutos.addEventListener("click", (e) => {
 
         mostrarCarrinho(nome, tamanho, preco)
 
-       
+
         Toastify({
             text: "Item Adicionado",
             duration: 3000,
@@ -241,47 +254,72 @@ containerProdutos.addEventListener("click", (e) => {
 
 //fechar/abrir carrinho de compras 
 
-iconCarrinho.addEventListener("click", ()=>{
+iconCarrinho.addEventListener("click", () => {
 
     iconCarrinhoBackground.style.display = "flex"
-    
+
     atualizandoCarrinho()
 
 })
 
 
-iconCarrinhoBackground.addEventListener("click", (e)=>{
+iconCarrinhoBackground.addEventListener("click", (e) => {
 
     if (e.target == iconCarrinhoBackground) {
 
         iconCarrinhoBackground.style.display = "none"
-        
+
     }
 
 })
 
 
-fecharCarrinho.addEventListener("click", ()=>{
+fecharCarrinho.addEventListener("click", () => {
     iconCarrinhoBackground.style.display = "none"
 })
 
 
 
-itensCarrinhoAdd.addEventListener("click", (e)=>{
+itensCarrinhoAdd.addEventListener("click", (e) => {
 
-    
+
 
     if (e.target.classList.contains("remover-item-carrinho")) {
 
         let nome = e.target.getAttribute("data-nome")
 
         removerItemCarrinho(nome);
-        
-        
-        
+
+
+
     }
 
 })
 
+btnFinalizarPedido.addEventListener("click", (e) => {
+
+    e.preventDefault()
+
+    fundoFinalizarPedido.style.display = "flex"
+
+
+})
+
+
+fundoFinalizarPedido.addEventListener("click", (e)=>{
+
+    if (e.target == fundoFinalizarPedido) {
+        fundoFinalizarPedido.style.display = "none"
+    }
+})
+
+btnFecharFinalizarPagamento.addEventListener("click", () => {
+
+    
+
+    fundoFinalizarPedido.style.display = "none"
+
+
+})
 
 

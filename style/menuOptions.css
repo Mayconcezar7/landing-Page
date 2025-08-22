@@ -61,6 +61,10 @@
     color: rgb(223, 176, 24);
 }
 
+.titulo-carrinho{
+    margin-bottom: 10px;
+}
+
 
 .lista-de-item {
 
@@ -202,6 +206,7 @@
     width: 500px;
     border-radius: 10px;
     
+    
 }
 
 
@@ -251,7 +256,23 @@
     margin-top: 10px;
 }
 
+#btn-finalizar-pedido{
+    display: none;
+    margin-top: 10px;
+    background-color: rgb(9, 165, 9);
+    padding: 6px 12px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #fefefe;
+    border: 1px solid rgb(9, 129, 9);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 500ms ease;
+}
 
+#btn-finalizar-pedido:hover{
+    background-color: rgba(32, 143, 32, 0.61);
+}
 
 
 
