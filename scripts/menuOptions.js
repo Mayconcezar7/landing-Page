@@ -322,4 +322,3 @@ btnFecharFinalizarPagamento.addEventListener("click", () => {
 
 })
 
-
