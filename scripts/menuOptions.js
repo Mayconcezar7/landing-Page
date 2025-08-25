@@ -30,6 +30,11 @@ const btnFecharFinalizarPagamento = document.querySelector("#btn-fechar-finaliza
 
 
 const btnFinalizarPedido = document.querySelector("#btn-finalizar-pedido")
+const precoTotalFinalizarPedido = document.querySelector("#preco-total-iten-confirmado")
+
+const btnFinalizarPagamento = document.querySelector(".forms-pagamento")
+
+
 
 let itensCarrinho = []
 
@@ -126,9 +131,12 @@ const atualizandoCarrinho = () => {
 
     })
 
+ 
+
     precoTotal.style.color = "green"
 
     precoTotal.innerHTML = total.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+    precoTotalFinalizarPedido.innerHTML = total.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 
 
     if (itensCarrinho.length > 0) {
@@ -250,8 +258,6 @@ containerProdutos.addEventListener("click", (e) => {
 })
 
 
-
-
 //fechar/abrir carrinho de compras 
 
 iconCarrinho.addEventListener("click", () => {
@@ -279,7 +285,6 @@ fecharCarrinho.addEventListener("click", () => {
 })
 
 
-
 itensCarrinhoAdd.addEventListener("click", (e) => {
 
 
@@ -295,6 +300,7 @@ itensCarrinhoAdd.addEventListener("click", (e) => {
     }
 
 })
+
 
 btnFinalizarPedido.addEventListener("click", (e) => {
 
@@ -313,6 +319,7 @@ fundoFinalizarPedido.addEventListener("click", (e)=>{
     }
 })
 
+
 btnFecharFinalizarPagamento.addEventListener("click", () => {
 
     
@@ -321,4 +328,46 @@ btnFecharFinalizarPagamento.addEventListener("click", () => {
 
 
 })
+
+btnFinalizarPagamento.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nome = document.getElementById("nome-cliente").value;
+    const mesa = document.getElementById("mesa-cliente").value;
+    const pagamento = document.getElementById("pagamento").value;
+    const observacoes = document.getElementById("observacoes").value;
+    const precoTotal = document.getElementById("preco-total-iten-confirmado").innerText;
+
+  
+    let informacoesUsuario = 
+`*🍽️ Novo Pedido:*
+
+👤 *Nome:* ${nome}
+🪑 *Mesa:* ${mesa}
+💳 *Pagamento:* ${pagamento}
+📝 *Observações:* ${observacoes ? observacoes : "Nenhuma"}
+`;
+
+    
+    const enviarPedido = itensCarrinho.map((item) => {
+        return (
+`• *${item.nome}*
+   Quantidade: ${item.quantidade}
+   Preço: R$${item.preco.toFixed(2)}`
+        )
+    }).join("\n\n"); 
+    
+    
+    let valorPedido = `\n\n💵 *Total:* ${precoTotal}`;
+
+    const numeroWhatsApp = "5511964973043"; 
+
+    
+    const mensagemFinal = `${informacoesUsuario}\n${enviarPedido}\n${valorPedido}`;
+
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagemFinal)}`;
+
+    window.open(url, "_blank");
+});
+
 
