@@ -329,7 +329,9 @@ btnFecharFinalizarPagamento.addEventListener("click", () => {
 
 })
 
-btnFinalizarPagamento.addEventListener("submit", function(e) {
+
+//enviar dados pro whats
+btnFinalizarPagamento.addEventListener("submit", (e)=> {
     e.preventDefault();
 
     const nome = document.getElementById("nome-cliente").value;
